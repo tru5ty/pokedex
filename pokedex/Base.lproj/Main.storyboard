@@ -189,13 +189,24 @@
                                         </variation>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FiI-BA-mhQ">
-                                        <rect key="frame" x="8" y="11" width="50" height="34"/>
+                                        <rect key="frame" x="8" y="11" width="51" height="35"/>
                                         <animations/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="2vF-mL-wN9"/>
+                                            <constraint firstAttribute="width" constant="51" id="EWX-ln-yY7"/>
                                             <constraint firstAttribute="height" constant="34" id="HUC-wG-N3H"/>
+                                            <constraint firstAttribute="height" constant="35" id="aib-wy-yF1"/>
                                         </constraints>
                                         <state key="normal" image="back"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="2vF-mL-wN9"/>
+                                                <exclude reference="HUC-wG-N3H"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="backBtnPressed:" destination="gWM-eO-TsD" eventType="touchUpInside" id="nex-7n-2eL"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <animations/>
@@ -223,7 +234,7 @@
                                         </segments>
                                         <color key="tintColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                     </segmentedControl>
-                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JIN-5H-Gkc">
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JIN-5H-Gkc">
                                         <rect key="frame" x="0.0" y="53" width="560" height="120"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="128" translatesAutoresizingMaskIntoConstraints="NO" id="of3-37-JI3">
@@ -238,37 +249,37 @@
                                                 <rect key="frame" x="120" y="0.0" width="440" height="120"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <animations/>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="xFI-yd-Vsd">
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="xFI-yd-Vsd">
                                         <rect key="frame" x="0.0" y="197" width="560" height="58"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mlZ-OG-omr">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mlZ-OG-omr">
                                                 <rect key="frame" x="0.0" y="0.0" width="111" height="58"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <color key="textColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="FIGHTING" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G3c-cf-ODn">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="FIGHTING" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G3c-cf-ODn">
                                                 <rect key="frame" x="111" y="0.0" width="184" height="58"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Defense:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBx-QJ-7tg">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Defense:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBx-QJ-7tg">
                                                 <rect key="frame" x="294" y="0.0" width="175" height="58"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <color key="textColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="1200" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JFB-JE-S3n">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="1200" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JFB-JE-S3n">
                                                 <rect key="frame" x="469" y="0.0" width="92" height="58"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -278,7 +289,7 @@
                                         </subviews>
                                         <animations/>
                                     </stackView>
-                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FTN-JU-uG8">
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FTN-JU-uG8">
                                         <rect key="frame" x="0.0" y="279" width="560" height="1"/>
                                         <animations/>
                                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -286,7 +297,7 @@
                                             <constraint firstAttribute="height" constant="1" id="lEL-gv-IyR"/>
                                         </constraints>
                                     </view>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="18J-8b-C4g">
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="18J-8b-C4g">
                                         <rect key="frame" x="0.0" y="304" width="560" height="21"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Height:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mqc-CK-A2G">
@@ -357,7 +368,7 @@
                                 </subviews>
                                 <animations/>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleAspectFit" misplaced="YES" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="HO7-UG-bI6">
+                            <stackView opaque="NO" contentMode="scaleAspectFit" misplaced="YES" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="HO7-UG-bI6">
                                 <rect key="frame" x="0.0" y="437" width="600" height="100"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="129" translatesAutoresizingMaskIntoConstraints="NO" id="B1S-cT-0xl">
@@ -369,7 +380,7 @@
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="130" translatesAutoresizingMaskIntoConstraints="NO" id="3VQ-p5-mqq">
-                                        <rect key="frame" x="303" y="0.0" width="297" height="100"/>
+                                        <rect key="frame" x="304" y="0.0" width="297" height="100"/>
                                         <animations/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="EdR-Ko-MgU"/>
@@ -422,12 +433,23 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="baseAttLbl" destination="J2F-59-lTf" id="FBT-Yh-hCi"/>
+                        <outlet property="currentEvoImg" destination="B1S-cT-0xl" id="xfd-tg-NLm"/>
+                        <outlet property="defenseLbl" destination="JFB-JE-S3n" id="Wax-T5-04k"/>
+                        <outlet property="descLbl" destination="ffI-Ap-eL7" id="yIf-j7-6TA"/>
+                        <outlet property="evoTextLbl" destination="0BG-b4-Uoa" id="HRI-6J-FRk"/>
+                        <outlet property="heightLbl" destination="EfY-Lk-Xui" id="uRS-K5-Okc"/>
+                        <outlet property="mainImg" destination="of3-37-JI3" id="eFW-rI-3h9"/>
                         <outlet property="nameLabel" destination="GJ6-DP-Q7U" id="USE-HB-etF"/>
+                        <outlet property="nextEvoImg" destination="3VQ-p5-mqq" id="ZAK-ln-b5s"/>
+                        <outlet property="pokedexIDLbl" destination="HmV-1j-H67" id="7ce-bi-fSW"/>
+                        <outlet property="typeLbl" destination="G3c-cf-ODn" id="rXy-ow-gvx"/>
+                        <outlet property="weightLbl" destination="6Ky-8P-z1y" id="c9o-22-bts"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qxt-pg-1qf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1323" y="475"/>
+            <point key="canvasLocation" x="1310" y="475"/>
         </scene>
     </scenes>
     <resources>
